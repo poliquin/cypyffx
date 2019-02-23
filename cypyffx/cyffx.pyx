@@ -23,7 +23,7 @@ cdef class cFFX:
             raise ValueError(f'rounds must be in range(2, 255), got {rounds}.')
 
         if radix > 255 or radix <= 1:
-            raise ValueError(f'radix must be in range(2, 226), got {radix}.')
+            raise ValueError(f'radix must be in range(2, 256), got {radix}.')
 
         self.secret = secret if secret is not None else b''
         self.radix = radix
