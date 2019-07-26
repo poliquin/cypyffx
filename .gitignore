@@ -1,5 +1,7 @@
 
 build/
+dist/
+cypyffx.egg-info/
 __pycache__/
 
 *.c
